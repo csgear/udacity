@@ -13215,10 +13215,13 @@ Fill in the missing code below so that the function will make this prediction.<b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Pclass == 3&quot;</span><span class="p">])</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># vs.survival_stats(data, outcomes, &#39;Sex&#39;, [&quot;Pclass == 1&quot;])</span>
+<span class="c1"># vs.survival_stats(data, outcomes, &#39;Sex&#39;, [&quot;Pclass == 2&quot;])</span>
+<span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Pclass == 3&quot;</span><span class="p">])</span>
+
 <span class="n">vs</span><span class="o">.</span><span class="n">survival_stats</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Sex == &#39;female&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;Pclass == 3&quot;</span><span class="p">])</span>
 </pre></div>
 
@@ -14057,7 +14060,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: <em>Replace this text with your answer to the question above.</em></p>
+<p><strong>Answer</strong>: In order to make the prediction more accuracy, I have looked into other features. Intuition, people who stay in first class may have more chances to escape. I plotted the images to the relation between Pclass and Sex parameters. Then I relized that the algorithm may mispredict for the data with parameter Sex == 'female' and pClass == '3. Although I would doubt those data had been manipulated for purpose, I checked other aspects of those data. For example, I checked the age parameter and SibSp etc. After that I did minor changes to my algorithm to make the predication for Sex == 'female' and pClass == '3 more accuracy. As long as I hit the 80%, I have done my attempation.</p>
 
 </div>
 </div>
@@ -14079,7 +14082,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: Pclass,Fare</p>
+<p><strong>Answer</strong>: In ecommerce area, we play very attention to the conversion rate in our system. There are many different types of conversion, in terms of click conversion, ordering conversion, gmv conversion. So the products that the system recommends is important. The system needs to predict what products the customers will be most interested. The features would be many kinds. For examples, the products that the customers have clicked in last 48 hours is one factor that should be taken into account. And what products the customer has bought also play important role in prediction algorithm. Moreover, the promptions and other pricing features should be built into the algorithm as well.</p>
 
 </div>
 </div>
@@ -14095,6 +14098,19 @@ Make sure to keep track of the various features and conditions you tried before 
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
